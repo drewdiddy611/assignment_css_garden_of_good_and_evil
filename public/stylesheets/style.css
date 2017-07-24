@@ -1,13 +1,13 @@
-h1 {
-  text-align: center;
-}
-
 .good {
   background-color: #008800;
 }
 
 .evil {
   background-color: #880000;
+}
+
+h1 {
+  text-align: center;
 }
 
 .faction-good {
