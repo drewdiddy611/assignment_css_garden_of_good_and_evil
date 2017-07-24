@@ -9,21 +9,39 @@
 
 
 	<h3>Likes and Dislikes</h3>
-	<p> My likes:</p>
-	<ul>
-		<li>Favorite food: {{data.food}}</li>
-		<li>the color {{data.color}}</li>
-		<li>kittens</li>
-		<li>puppies</li>
-		<li>music</li>
-		<li>coding</li>
-	</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<p> My likes:</p>
+				<ul>
+					<li>Favorite food: {{data.food}}</li>
+					<li>the color {{data.color}}</li>
+					<li>kittens</li>
+					<li>puppies</li>
+					<li>music</li>
+					<li>coding</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<p> My Dislikes:</p>
+				<ul>
+					<li>People who don't eat {{data.food}}</li>
+					<li>People who don't like the color {{data.color}}</li>
+					<li>non-kittens</li>
+					<li>non-puppies</li>
+					<li>about {{data.insanity}} people</li>
+					<li>public speaking</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 
 	<h3>About Me</h3>
 	<p>My friends say I'm {{data.faction}}. But I disagree! I am a little insane
 	 though. {{data.insanity}} level of insanity, to be exact!</p>
 
-<div class="faction-evil">
+<div class="faction-evil hidden">
 	<h3>Resume</h3>
 	<ul>
 		<li>The evil {{data.food}} company, 3 years</li>
@@ -33,7 +51,7 @@
 	</ul>
 </div>
 
-<div class="faction-good">
+<div class="faction-good hidden">
 	<h3>Resume</h3>
 	<ul>
 		<li>The good {{data.food}} company, 3 years</li>
