@@ -1,3 +1,19 @@
 h1 {
   text-align: center;
 }
+
+.good {
+  background-color: #008800;
+}
+
+.evil {
+  background-color: #880000;
+}
+
+.faction-good {
+  display: none;
+}
+
+.faction-evil {
+  display: none;
+}

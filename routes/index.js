@@ -5,8 +5,14 @@ const cookieMap = ["food", "color", "faction", "insanity"];
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
+  var data = {};
+  cookieMap.forEach(el => {
+    data[el] = req.cookies[el];
+  });
+  console.log(data);
   res.render("index", {
-    title: "The Kingdom of Good & Evil"
+    title: "The Kingdom of Good & Evil",
+    data: data
   });
 });
 
