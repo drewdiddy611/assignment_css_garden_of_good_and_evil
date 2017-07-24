@@ -93,11 +93,6 @@ function titleInsane(sanityLevel, color) {
 	}, sanityLevel);
 }
 
-jQuery.fn.rotate = function(degrees) {
-	$(this).css({ transform: 'rotate(' + degrees + 'deg)' });
-	return $(this);
-};
-
 function insaneKitties() {
 	let $container = $('<div/>', {
 		class: 'kitty-container'
@@ -127,7 +122,6 @@ function insaneKitties() {
 		$kitty
 			.clone()
 			.attr('src', 'images/kitten' + i + '.png')
-			.rotate(r)
 			.css({
 				left: x,
 				top: y
