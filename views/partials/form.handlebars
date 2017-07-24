@@ -1,12 +1,36 @@
-<form method="post" action="/">
-  <radio>
-  </radio>
+<form class="inline-form" method="post" action="/">
+	<div class="radio">
+		<label>
+			<input name="faction" value="good" type="radio" />
+			Good
+		</label>
+		<label>
+			<input name="faction" value="good" type="radio" />
+			Evil
+		</label>
+	</div>
+
+	<div class="form-group">
+		<label for="favorite-food">Favorite Food</label>
+		<input class="form-control" type="text" id="favorite-food" />
+	</div>
   <div class="form-group">
-    <select>
+		<label for="favorite-color">
+			Favorite Color
+		</label>
+    <select id="favorite-color">
+			<option>adsfdaf</option>
+			<option>adsfdaf</option>
+			<option>adsfdaf</option>
+			<option>adsfdaf</option>
   </select>
   </div>
+
+	<div class="form-group">
+		<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+	</div>
+
   <div class="form-group">
-    <input type="submit" class="btn-success">
-    </input>
+    <input type="submit" class="btn btn-success" />
   </div>
 </form>
