@@ -2,24 +2,24 @@
 <form class="inline-form" method="post" action="/">
 	<div class="radio">
 		<label>
-			<input name="faction" value="good" type="radio" />
+			<input name="faction" value="good" type="radio" id="faction-good"/>
 			Good
 		</label>
 		<label>
-			<input name="faction" value="evil" type="radio" />
+			<input name="faction" value="evil" type="radio" id="faction-evil"/>
 			Evil
 		</label>
 	</div>
 
 	<div class="form-group">
-		<label for="favorite-food">Favorite Food</label>
-		<input name="food" class="form-control" type="text" id="favorite-food"/>
+		<label for="food">Favorite Food</label>
+		<input name="food" class="form-control" type="text" id="food"/>
 	</div>
   <div class="form-group">
-		<label for="favorite-color">
+		<label for="color">
 			Favorite Color
 		</label>
-    <select name="color" id="favorite-color">
+    <select name="color" id="color">
 			<option value="none">
 				Select a color
 			</option>
@@ -32,7 +32,7 @@
 
 	<div class="form-group">
 		<input name="insanity"
-						id="ex1" data-slider-id='ex1Slider' type="text"
+						id="insanity" data-slider-id='ex1Slider' type="text"
 						data-slider-min="0" data-slider-max="20"
 						data-slider-step="1" data-slider-value="0"/>
 	</div>
